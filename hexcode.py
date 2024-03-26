@@ -1,7 +1,7 @@
 import re
 def find_hex_nums(text):
 	# Поиск шестнадцатеричных чисел с F в любом месте и кол-ве
-	reg = r'\b(?:0x)?(?:F[0-9a-eA-E]*\b|[0-9a-eA-E]*F)\b'
+	reg = r'\b(?:F[0-9a-eA-E]*\b|[0-9a-eA-E]*F)\b'
 	hex_num = re.findall(reg, text)
 	return hex_num
 def main():
